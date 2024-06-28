@@ -1,0 +1,1253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+body a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+.main {
+    /* background-color: rgba(135, 207, 235, 0.251); */
+    background-color: rgba(0, 0, 0, 0.116);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* ***************** Loing and Register page start **************** */
+
+.login-form {
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.094);
+    display: flex;
+    gap: 1vmax;
+    padding: 2vmax 1vmax 3vmax 1vmax;
+    border-radius: 5px;
+    background-color: white;
+    width: 23%;
+}
+
+
+
+.login-form .input-login-form input {
+    height: 3vmax;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    padding-left: 1.5vmax;
+    font-size: 14px;
+}
+
+
+
+.login-form input::placeholder {
+    font-size: 14px;
+}
+
+.otp-msg {
+    font-size: 12px;
+}
+
+.login-form div {
+    position: relative;
+}
+
+.login-form .input-login-form i {
+    position: absolute;
+    top: 35%;
+}
+
+
+.sow-hide {
+    right: 5%;
+    cursor: pointer;
+}
+
+.login-form p {
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+    .login-form {
+        width: 90%;
+    }
+    .login-form .input-login-form{
+        margin-bottom: 3vmax;
+    }
+    .login-form .input-login-form input {
+        height: 6vmax;
+        padding-left: 3.5vmax;
+    }
+    .login-form .input-login-form i {
+        position: absolute;
+        top: 25%;
+    }
+    .login-form p {
+        font-size: 13px;
+        text-align: center;
+    }
+    
+}
+
+.login-form a {
+    cursor: pointer;
+}
+
+.login-form .login-button {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form .login-button button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: .5vmax 3vmax;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+
+.login-gender div {
+    display: flex;
+    align-items: center;
+    gap: .5vmax;
+    /* justify-content: center; */
+}
+
+.login-gender div h6 {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.667);
+}
+
+.login-gender-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .4vmax;
+}
+
+.login-gender span {
+    display: flex;
+    align-items: center;
+    gap: .5vmax;
+}
+
+.login-gender span input {
+    height: 1vmax;
+    width: 1vmax;
+}
+@media screen and (max-width: 769px) {
+    .login-gender div {
+        gap: 3vmax;
+    }
+    .login-gender span {
+        gap: 1vmax;
+    }
+    .login-gender span input {
+        height: 2vmax;
+        width: 2vmax;
+    }
+}
+
+
+/* ***************** Loing and Register page end **************** */
+
+
+/* ********************** home page start ********************** */
+
+/* ***************** side nav start **************** */
+
+.side-nav-main {
+    background-color: #1E1E1E;
+    height: 100vh;
+}
+
+
+
+
+.side-nav-top img {
+    margin-top: 1vmax;
+    height: 6vmax;
+}
+
+.side-nav-top-bottom ul {
+    margin-top: 1.5vmax;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vmax;
+    width: max-content;
+}
+
+
+
+.side-nav-top-bottom ul li {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.side-nav-top-bottom ul li:hover {
+    background-color: rgba(255, 255, 255, 0.119);
+
+}
+
+.side-nav-top-bottom ul li a {
+    padding: .4vmax 1vmax;
+    display: flex;
+    align-items: baseline;
+    gap: 1vmax;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.side-nav-top-bottom ul .active {
+    background-color: rgba(255, 255, 255, 0.119);
+    font-weight: 500;
+}
+
+.side-nav-top-bottom-logout {
+    display: flex;
+    align-items: center;
+}
+
+.side-nav-top-bottom-logout button {
+    border: none;
+    outline: none;
+    margin-top: 1vmax;
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    text-align: center;
+    padding: 1vmax;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: #D5663F;
+}
+.chat-button{
+    display: none;
+}
+
+
+@media screen and (max-width: 769px) {
+    .side-nav-main {
+        background-color: #1E1E1E;
+        height: max-content;
+        padding: 1vmax;
+    }
+    .side-nav img{
+        height: 8vmax;
+    }
+    .side-nav-top-bottom ul {
+        display: none;
+    }
+    .side-nav-top-bottom-logout{
+        justify-content: flex-end;
+        gap: 2vmax;
+    }
+    .side-nav-top-bottom-logout button {
+        width: max-content;
+        padding: 1vmax 2vmax;
+        /* display: none; */
+    }
+    .side-nav-top-bottom-logout button span{
+        display: none;
+    }
+
+    .chat-button {
+        display: initial;
+        background-color: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.224) !important;
+        position: relative;
+    }
+    .chat-button div{
+        background-color: red;
+        position: absolute;
+        top: -30%;
+        left: 0;
+        /* padding: 1vmax; */
+        border-radius: 50%;
+        width: 3vmax;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3vmax;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* ***************** side nav end **************** */
+
+
+/* ***************** share fild start **************** */
+
+.share-main {
+    background-color: red;
+    overflow-y: auto;
+    padding-bottom: .5vmax;
+}
+
+.share-main::-webkit-scrollbar {
+    display: none;
+}
+
+.share-main-end-main {
+    background-color: #1E1E1E;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.share-main-end-main::-webkit-scrollbar {
+    display: none;
+}
+
+.share-main {
+    height: 100vh;
+    background-color: black;
+}
+
+.card-box {
+    background-color: #1E1E1E;
+    padding: 1vmax;
+    border-radius: 5px;
+    margin-top: 1vmax;
+    width: 100%;
+}
+
+
+.share-main-top-select {
+    display: flex;
+    flex-direction: column;
+    gap: .5vmax;
+}
+
+.share-main-top-select label {
+    color: white;
+}
+
+.share-main-top-select select {
+    padding: .5vmax;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    padding-right: 5vmax;
+    border: 1px solid rgba(255, 255, 255, 0.167);
+    width: 100%;
+}
+@media screen and (max-width: 769px) {
+    .card-box {
+        padding-bottom: 2vmax;
+    }
+    .share-main-top-select select {
+        padding-bottom: 1.5vmax;
+    }
+}
+
+.share-main-top-select select:focus {
+    border: 1px solid rgba(255, 255, 255, 0.468);
+
+}
+
+.share-main-top-select select option {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.share-main-top-input textarea {
+    /* margin-top: 1vmax; */
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: .5vmax;
+    border: 1px solid rgba(255, 255, 255, 0.167);
+    border-radius: 5px;
+    min-height: 7vmax;
+    font-size: 14px;
+}
+
+
+.card-box label {
+    color: white;
+}
+
+.share-main-top-input textarea:focus {
+    max-height: max-content;
+    border: 1px solid rgba(255, 255, 255, 0.468);
+}
+
+.share-main-top-input textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.share-main-top-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vmax;
+    padding-left: .5vmax;
+    align-items: center;
+}
+
+.share-main-top-button i {
+    color: rgba(255, 255, 255, 0.468);
+    font-size: 22px;
+    background-color: black;
+    height: 3vmax;
+    width: 3vmax;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .25s;
+}
+
+@media screen and (max-width: 769px) {
+    .share-main-top-input textarea {
+        min-height: 20vh;
+        padding: 1vmax;
+    }
+    .nnnn{
+        display:none;
+    }
+    .share-main-top-button i {
+        height: 7vmax;
+        width: 7vmax;
+    }
+    .share-main-end-main{
+        display: none;
+    }
+}
+
+.share-main-top-button i:hover {
+    background-color: #D5663F;
+    color: white;
+}
+
+.share-main-top-button button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: .5vmax 2vmax;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: #D5663F;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(25px);
+}
+
+.circle-ripple {
+    background-color: rgba(255, 255, 255, 0.484);
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    animation: ripple .9s linear infinite;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.circle-ripple img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(213, 102, 63, 0.3),
+            0 0 0 1em rgba(213, 102, 63, 0.3),
+            0 0 0 3em rgba(213, 102, 63, 0.3),
+            0 0 0 5em rgba(213, 102, 63, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 1em rgba(213, 102, 63, 0.3),
+            0 0 0 3em rgba(213, 102, 63, 0.3),
+            0 0 0 5em rgba(213, 102, 63, 0.3),
+            0 0 0 8em rgba(213, 102, 63, 0);
+    }
+}
+
+
+/* ***************** share fild end **************** */
+
+
+
+/* ***************** match left start **************** */
+
+.share-main-end {
+    color: white;
+    margin-top: 1vmax;
+    padding: 0 1.5vmax .5vmax .8vmax;
+}
+
+.user-match-card {
+    padding: .5vmax;
+    padding-bottom: .5vmax;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    transition: .25s;
+}
+
+.user-match-card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.653);
+}
+
+.user-match-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-match-card-top div {
+    display: flex;
+    align-items: center;
+    gap: .5vmax;
+    color: rgba(255, 255, 255, 0.511);
+    font-weight: 500;
+}
+
+.user-match-card-top div img {
+    height: 2.5vmax;
+    width: 2.5vmax;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.user-match-card-top button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: .2vmax 1.3vmax;
+    border-radius: 50px;
+    font-weight: 400;
+    background-color: #D5663F;
+    font-size: 14px;
+}
+
+.user-match-card-top-feeling {
+    font-size: 14px;
+    padding: .1vmax .4vmax;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.511);
+    color: white;
+}
+
+.user-match-card-bottom {
+    margin-top: .5vmax;
+}
+
+.user-match-card-bottom p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.511);
+    text-align: justify;
+}
+
+
+.user-match-card-bottom div {
+    text-align: end;
+    margin-top: -1vmax;
+}
+
+.user-match-card-bottom button {
+    font-size: 12px;
+    padding: 0;
+    color: #D5663F;
+    border: none;
+    background-color: transparent;
+}
+
+
+.nav-link-new {
+    background-color: red;
+    display: none;
+}
+
+.nav-tab-barr {
+    padding: 0;
+    border: none;
+    color: white;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.584);
+    padding-bottom: .5vmax;
+}
+
+.nav-tab-barr.active {
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+/* ***************** match left end **************** */
+
+
+
+/* ***************** post view card start **************** */
+.post-view-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-view-card-top div {
+    display: flex;
+    align-items: center;
+    gap: .5vmax;
+}
+
+.post-view-card-top div img {
+    height: 3vmax;
+    width: 3vmax;
+    border-radius: 50%;
+    overflow: hidden;
+}
+@media screen and (max-width: 769px) {
+    .post-view-card-top div img {
+        height: 6vmax;
+        width: 6vmax;
+    }
+}
+
+.post-view-card-top div span {
+    color: rgba(255, 255, 255, 0.511);
+    font-weight: 500;
+}
+
+.post-view-card-top div p {
+    color: #D5663F;
+    font-size: 10px;
+}
+
+.post-view-card-top-span {
+    color: white;
+    background-color: gray;
+    padding: .2vmax 1vmax;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.post-view-card-center {
+    margin-top: .8vmax;
+}
+
+.post-view-card-center p {
+    color: rgba(255, 255, 255, 0.783);
+    font-size: 17px;
+    white-space: pre-line;
+}
+
+
+.post-view-card-center div {
+    text-align: end;
+    margin-top: -1vmax;
+}
+
+.post-view-card-center button {
+    font-size: 12px;
+    padding: 0;
+    color: #D5663F;
+    border: none;
+    background-color: transparent;
+}
+
+.post-view-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.post-view-card-img img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 30vmax;
+    object-fit: cover;
+    margin-top: 1vmax;
+}
+
+
+.post-view-card-bottom {
+    margin-top: 1vmax;
+    color: white;
+    font-size: 22px;
+    padding: 0 .8vmax;
+}
+
+.post-view-card-bottom .col-md-4 {
+    display: flex;
+    align-items: flex-end;
+    gap: .4vmax;
+    justify-content: center;
+    padding: .5vmax 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.post-view-card-bottom .col-md-4:hover {
+    background-color: black;
+}
+
+.post-view-card-bottom div span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.783);
+}
+
+.ri-heart-2-fill {
+    color: #D5663F;
+}
+
+/* ***************** post view card end **************** */
+
+
+/* ***************** post modal comment card start **************** */
+
+.post-modal-body {
+    background-color: #1E1E1E;
+    left: -95%;
+    width: 95vw;
+    /* height: 90vh; */
+    /* overflow: hidden; */
+}
+@media screen and (max-width: 769px) {
+    .post-modal-body {
+        background-color: #1E1E1E;
+        left: initial;
+        width: initial;
+        height: initial;
+    }
+}
+
+.post-modal {
+    background-color: black;
+}
+
+.post-modal-body-new {
+    height: max-content;
+    left: -35%;
+    width: 51vmax;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+    border-radius: 10px;
+}
+
+
+.post-commnet-box {
+    /* background-color: red; */
+    color: white;
+}
+
+.post-commnet-box-top img {
+    height: 3vmax;
+    width: 3vmax;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 769px) {
+    .post-modal-body-new {
+        height: max-content;
+        left: initial;
+        width: initial;
+        border-radius: 5px;
+    }
+    .post-commnet-box-top img {
+        height: 5vmax;
+        width: 5vmax;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+
+.post-commnet-box-top {
+    display: flex;
+    align-items: flex-start;
+    gap: .3vmax;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.235);
+    padding-bottom: 1vmax;
+}
+
+.post-commnet-box-top-rigth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1vmax;
+}
+
+.post-commnet-box-top-rigth div {
+    width: 100%;
+}
+
+.post-commnet-box-top-rigth span {
+    width: 100%;
+    font-size: 14px;
+}
+
+.post-commnet-box-top-rigth span a {
+    text-decoration: none;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+
+.post-commnet-box-top-rigth textarea {
+    width: 100%;
+    min-height: 6vmax;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.715);
+    font-size: 16px;
+}
+
+@media screen and (max-width: 769px) {
+    .post-commnet-box-top img {
+        height: 5vmax;
+        width: 5vmax;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .post-commnet-box-top-rigth textarea {
+        min-height: 15vmax;
+    }
+    
+}
+
+.post-commnet-box-top-rigth button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: .5vmax 1.5vmax;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: #D5663F;
+}
+
+.post-commnet-box-bottom {
+    margin-top: 1vmax;
+}
+
+.post-commnet-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1vmax;
+    margin-top: 1vmax;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.235);
+    padding-bottom: .5vmax;
+}
+
+.post-commnet-box-bottom-bottom {
+    max-height: 25vmax;
+    overflow-y: auto;
+}
+
+.post-commnet-box-bottom-bottom::-webkit-scrollbar {
+    display: none;
+}
+
+.post-commnet-card-top {
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+}
+
+.post-commnet-card-top img {
+    height: 2.5vmax;
+    width: 2.5vmax;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.post-commnet-card-bottom span {
+    color: rgba(255, 255, 255, 0.874);
+}
+
+.post-commnet-card-bottom div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.post-commnet-card-bottom div p {
+    color: #D5663F;
+    padding-left: .5vmax;
+    font-size: 10px;
+}
+
+
+
+
+.post-commnet-card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-commnet-card-bottom p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.587);
+}
+
+@media screen and (max-width: 769px) {
+    .post-commnet-card-top img {
+        height: 5vmax;
+        width: 5vmax;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .post-commnet-box-bottom-bottom {
+        max-height: initial;
+        overflow-y: auto;
+    }
+    
+}
+
+.post-commnet-card-like-com {
+    display: flex;
+    align-items: center;
+    gap: 2vmax;
+    font-size: 14px;
+    margin-top: -.5vmax;
+}
+
+.post-commnet-card-like-com div {
+    display: flex;
+    align-items: flex-end;
+    gap: .5vmax;
+    color: white;
+    padding: .3vmax 1vmax;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.post-commnet-card-like-com div:hover {
+    background-color: black;
+}
+
+.post-commnet-card-like-com div span {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.587);
+}
+
+.post-commnet-card-bottom-more h6 {
+    margin-top: .7vmax;
+    font-size: 14px;
+    color: #D5663F;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.post-commnet-box-top-new {
+    padding: 0;
+}
+
+.post-commnet-card-new {
+    border-bottom: none;
+    padding: 0;
+}
+
+.post-commnet-card-new p {
+    font-size: 16px;
+    color: rgba(245, 222, 179, 0.701);
+}
+
+.Connect-button .button1 {
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: .2vmax .8vmax;
+    border-radius: 5px;
+    transition: .25s;
+    background-color: blueviolet;
+    color: white !important;
+}
+.cheat-mdal{
+    width: 100% !important;
+}
+@media screen and (max-width: 769px) {
+    .Connect-button button {
+        font-size: 14px !important;
+    }
+}
+
+.Connect-button .button1:hover {
+    border: 1px solid #D5663F;
+    background-color: transparent;
+}
+
+.Connect-button .button2 {
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: .2vmax .8vmax;
+    border-radius: 5px;
+    transition: .25s;
+    color: white !important;
+    border: 1px solid #D5663F;
+}
+
+.Connect-button .button3 {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: .2vmax .8vmax;
+    border-radius: 5px;
+    transition: .25s;
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    color: black;
+    text-decoration: none;
+}
+
+.Connect-button .button3 i {
+    color: black;
+}
+
+.Connect-button .button3:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.Connect-button .button3:hover i {
+    color: yellowgreen;
+}
+
+/* ***************** post modal comment card end **************** */
+
+
+/* chat list css start */
+
+.chat-profile-card {
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    border: 1px solid rgba(245, 222, 179, 0.221);
+    padding: .8vmax;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-profile-card:hover {
+    border-color: rgba(245, 222, 179, 0.758);
+}
+
+.chat-profile-card .chat-profile-card-left img {
+    height: 3vmax;
+}
+
+.chat-profile-card .chat-profile-card-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.chat-profile-card .chat-profile-card-right h5 {
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 16px;
+}
+
+.chat-profile-card .chat-profile-card-right h6 {
+    color: white;
+    background-color: gray;
+    padding: .2vmax 1vmax;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.offcanvas-body {
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.chat-view-card-box {
+    height: 100%;
+}
+
+.chat-view-card-box .chat-view-card-box-bottom {
+    position: fixed;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.chat-view-card-box .chat-view-card-box-bottom textarea {
+    width: 100%;
+    padding: .5vmax .8vmax;
+    outline: none;
+    min-height: 3vmax;
+    max-height: 10vmax;
+    background-color: #1E1E1E;
+    color: white;
+    font-weight: 400;
+    border: 1px solid transparent;
+}
+
+.chat-view-card-box .chat-view-card-box-bottom textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-view-card-box .chat-view-card-box-bottom textarea::placeholder {
+    color: white;
+    font-weight: 300;
+}
+
+.chat-view-card-box .chat-view-card-box-bottom textarea:focus {
+    border: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+.chat-view-card-box-bottom form {
+    position: relative;
+}
+
+.chat-view-card-box-bottom button {
+    position: absolute;
+    right: .5vmax;
+    font-size: 22px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.chat-view-card-box-top {
+    padding: 1vmax;
+    /* background-color: rgba(81, 91, 95, 0.171); */
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    gap: .8vmax;
+    overflow-y: auto;
+    padding-bottom: 1.5vmax;
+}
+
+.chat-view-card-box-top::-webkit-scrollbar {
+    display: none
+}
+
+.chat-box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-box p {
+    font-weight: 500;
+    max-width: 100%;
+    width: max-content;
+    font-size: 13px;
+    word-wrap: break-word;
+    padding: .7vmax 1vmax;
+    color: rgba(255, 255, 255, 0.749);
+    text-align: justify;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.chat-box1 p {
+    background-color: darkblue;
+
+}
+
+.chat-box1 {
+    justify-content: flex-start;
+}
+
+.chat-box2 {
+    justify-content: flex-end;
+}
+
+.chat-box2 p {
+    background-color: rgb(118, 31, 201);
+}
+
+.offcanvas-header {
+    background-color: black;
+}
+
+.Offcanvas-Title-img {
+    height: 3vmax;
+    margin-right: 1vmax;
+}
+
+@media screen and (max-width: 769px) {
+    .Offcanvas-Title-img {
+        height: 6vmax;
+        margin-right: 1vmax;
+    }
+    .chat-view-card-box .chat-view-card-box-bottom textarea {
+    width: 100%;
+    padding: 2vmax .8vmax;
+    outline: none;
+    min-height: 3vmax;
+    max-height: 10vmax;
+    background-color: #1E1E1E;
+    color: white;
+    font-weight: 400;
+    border: 1px solid transparent;
+}
+}
+
+.offcanvas-header .btn-close {
+    background-color: white;
+}
+
+/* chat list css end */
+
+
+/* ********************** home page end ********************* */
