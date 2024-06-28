@@ -54,7 +54,7 @@ const SideNav = () => {
               </button>
               <button className="chat-button">
               <i className="ri-chat-1-line"></i>
-              <div>5</div>
+              <div>0</div>
               </button>
             </div>
           </div>
