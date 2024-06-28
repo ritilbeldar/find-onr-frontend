@@ -13,7 +13,7 @@ const RegisterContext = ({ children }) => {
     try {
       const token = Cookies.get("token");
       const response = await axios.post(
-        `http://localhost:5000/user/post_like/${postId}`,
+        `https://find-one-backend.onrender.com/user/post_like/${postId}`,
         {},
         {
           headers: {
@@ -35,7 +35,7 @@ const RegisterContext = ({ children }) => {
     try {
       const token = Cookies.get("token");
       await axios.post(
-        `http://localhost:5000/user/post_commnet/${postId}`,
+        `https://find-one-backend.onrender.com/user/post_commnet/${postId}`,
         { comment: commentText },
         {
           headers: {
@@ -54,7 +54,7 @@ const RegisterContext = ({ children }) => {
     try {
       const token = Cookies.get("token");
       const response = await axios.post(
-        `http://localhost:5000/user/post_commnet_like/${postId}/${commentId}`,
+        `https://find-one-backend.onrender.com/user/post_commnet_like/${postId}/${commentId}`,
         {},
         {
           headers: {
@@ -76,7 +76,7 @@ const RegisterContext = ({ children }) => {
     try {
       const token = Cookies.get("token");
       const response = await axios.post(
-        `http://localhost:5000/user/post_commnet_comment_like/${postId}/${commentCommId}/${commentId}`,
+        `https://find-one-backend.onrender.com/user/post_commnet_comment_like/${postId}/${commentCommId}/${commentId}`,
         {},
         {
           headers: {

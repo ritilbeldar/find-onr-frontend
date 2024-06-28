@@ -20,7 +20,7 @@ const MatchedContextProvider = ({ children }) => {
     try {
       const token = Cookies.get("token");
       const response = await axios.post(
-        "http://localhost:5000/user/feelingmatch",
+        "https://find-one-backend.onrender.com/user/feelingmatch",
         { feeling },
         {
           headers: {
@@ -41,7 +41,7 @@ const MatchedContextProvider = ({ children }) => {
     try {
       const token = Cookies.get("token");
       const response = await axios.get(
-        `http://localhost:5000/user/feeling_Share/${userId}`,
+        `https://find-one-backend.onrender.com/user/feeling_Share/${userId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

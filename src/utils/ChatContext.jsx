@@ -16,7 +16,7 @@ const ChatContextProvider = ({ children }) => {
     try {
       const token = Cookies.get("token");
       const response = await axios.post(
-        `http://localhost:5000/user/add_in_chat/${userId}`,
+        `https://find-one-backend.onrender.com/user/add_in_chat/${userId}`,
         {},
         {
           headers: {

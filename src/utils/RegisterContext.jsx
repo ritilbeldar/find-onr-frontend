@@ -25,7 +25,7 @@ const RegisterContext = ({ children }) => {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await axios.get("http://localhost:5000/user", {
+      const response = await axios.get("https://find-one-backend.onrender.com/user", {
         withCredentials: true,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ const RegisterContext = ({ children }) => {
 
       const userDataWithAvatar = { ...data, avatar };
       const response = await axios.post(
-        "http://localhost:5000/userregister",
+        "https://find-one-backend.onrender.com/userregister",
         userDataWithAvatar
       );
 
@@ -63,7 +63,7 @@ const RegisterContext = ({ children }) => {
 
   const loginUser = async (username, password) => {
     try {
-      const response = await axios.post("http://localhost:5000/usersignin", {
+      const response = await axios.post("https://find-one-backend.onrender.com/usersignin", {
         username,
         password,
       });
@@ -81,7 +81,7 @@ const RegisterContext = ({ children }) => {
   const userForgotPassword = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/forgotPassword",
+        "https://find-one-backend.onrender.com/forgotPassword",
         data
       );
 
@@ -103,7 +103,7 @@ const RegisterContext = ({ children }) => {
       formData.append("postImg", postImg);
 
       const response = await axios.post(
-        "http://localhost:5000/user/post_create",
+        "https://find-one-backend.onrender.com/user/post_create",
         formData,
         {
           headers: {
@@ -124,7 +124,7 @@ const RegisterContext = ({ children }) => {
   const fetchPostData = async () => {
     try {
       const token = Cookies.get("token");
-      const response = await axios.get("http://localhost:5000/user/all_post", {
+      const response = await axios.get("https://find-one-backend.onrender.com/user/all_post", {
         withCredentials: true,
         headers: {
           Authorization: `Bearer ${token}`,

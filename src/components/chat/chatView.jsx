@@ -33,7 +33,7 @@ function ChatWindow({ show, handleClose, chatUser, userData }) {
         throw new Error("Message cannot be empty");
       }
       const response = await axios.post(
-        "http://localhost:5000/user/send_message",
+        "https://find-one-backend.onrender.com/user/send_message",
         {
           sender: userData._id,
           receiver: chatUser._id,
@@ -71,7 +71,7 @@ function ChatWindow({ show, handleClose, chatUser, userData }) {
     try {
       const token = Cookies.get("token");
       const response = await axios.get(
-        `http://localhost:5000/user/chat_history/${userId}`,
+        `https://find-one-backend.onrender.com/user/chat_history/${userId}`,
         {
           headers: {
             Authorization: `Bearer ${userData.token}`,

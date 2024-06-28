@@ -12,7 +12,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:5000/updatePassword/${username}`, { newPassword });
+      const response = await axios.put(`https://find-one-backend.onrender.com/updatePassword/${username}`, { newPassword });
       // Assuming the API returns success upon successful password update
       if (response.status === 200) {
         toast.success("Password changed successfully. Please login with your new password.");

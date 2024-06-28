@@ -13,7 +13,7 @@ const PostModal = ({ comment, userData, post }) => {
     try {
       const token = Cookies.get("token");
       await axios.post(
-        `http://localhost:5000/user/post_commnet_comment/${postId}/${commId}`,
+        `https://find-one-backend.onrender.com/user/post_commnet_comment/${postId}/${commId}`,
         { comment: commcommentText },
         {
           headers: {

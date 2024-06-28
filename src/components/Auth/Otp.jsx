@@ -16,7 +16,7 @@ const Otp = () => {
 
   const handleVerify = async () => {
     try {
-      const response = await axios.post(`http://localhost:5000/verify_otp/${username}`, {
+      const response = await axios.post(`https://find-one-backend.onrender.com/verify_otp/${username}`, {
         otp: otp,
         username: username
       });
