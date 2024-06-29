@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Login from "./components/Auth/Login";
 import ForgotPassword from "./components/Auth/forgotPassword";
 import PasswordOtp from "./components/Auth/PasswordOtp";

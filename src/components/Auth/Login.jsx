@@ -7,6 +7,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -54,7 +55,13 @@ const Login = () => {
               Don't have an account? <Link to="/register">Register Here</Link>
             </p>
             <div className="login-button">
-              <button type="submit">LOGIN</button>
+       <button type="submit" disabled={loading}>
+              {loading ? (
+                <i className="fa fa-spinner fa-spin"></i>
+              ) : (
+                "LOGIN"
+              )}
+            </button>
             </div>
           </form>
         </div>

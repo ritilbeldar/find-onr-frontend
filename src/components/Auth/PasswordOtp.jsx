@@ -10,6 +10,7 @@ const Otp = () => {
   const [otp, setOtp] = useState("");
   const navigate = useNavigate();
   const { username } = useParams(); 
+  const [loading, setLoading] = useState(false);
   const handleChange = (newValue) => {
     setOtp(newValue);
   };
@@ -44,7 +45,13 @@ const Otp = () => {
             onChange={handleChange}
           />
           <div className="login-button">
-            <button onClick={handleVerify}>VERIFY</button>
+            <button type="submit" disabled={loading} onClick={handleVerify}>
+              {loading ? (
+                <i className="fa fa-spinner fa-spin"></i>
+              ) : (
+                "VERIFY"
+              )}
+            </button>
           </div>
         </div>
         <Outlet/>

@@ -8,6 +8,7 @@ const PostModal = ({ post, expandedUsers, userData, handleLikePost }) => {
   const [show, setShow] = useState(false);
   const { postComment, commentText, setCommentText, handleLikeCommet,formatTime } =
     useContext(PostContext);
+    const [loading, setLoading] = useState(false);
 
 
 
@@ -92,7 +93,13 @@ const PostModal = ({ post, expandedUsers, userData, handleLikePost }) => {
                       onChange={(e) => setCommentText(e.target.value)}
                       autoFocus
                     />
-                    <button onClick={() => postComment(post._id)}>Post</button>
+                     <button type="submit" disabled={loading} onClick={() => postComment(post._id)}>
+              {loading ? (
+                <i className="fa fa-spinner fa-spin"></i>
+              ) : (
+                "Post"
+              )}
+            </button>
                   </div>
                 </div>
                 <div className="post-commnet-box-bottom">

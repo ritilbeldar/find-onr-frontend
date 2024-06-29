@@ -12,6 +12,7 @@ const ShareWith = () => {
   const [showMatchWave, setShowMatchWave] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
   const fileInputRef = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   const handlePostShare = async () => {
     if (!caption || !feeling) {
@@ -107,6 +108,9 @@ const ShareWith = () => {
                 ref={fileInputRef}
                 onChange={handleFileInputChange}
               />
+
+
+
               <button
                 disabled={!isFormValid}
                 onClick={handlePostShare}

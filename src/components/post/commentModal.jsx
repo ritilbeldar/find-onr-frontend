@@ -6,6 +6,7 @@ import { UserContext } from "../../utils/RegisterContext";
 
 const PostModal = ({ comment, userData, post }) => {
   const { fetchPostData } = useContext(UserContext);
+  const [loading, setLoading] = useState(false);
 
   const [commcommentText, setCommCommentText] = useState("");
   const [show, setShow] = useState(false);
@@ -83,11 +84,13 @@ const PostModal = ({ comment, userData, post }) => {
                         autoFocus
                       />
                     </div>
-                    <button
-                      onClick={() => postCommComment(post._id, comment._id)}
-                    >
-                      Post
-                    </button>
+                    <button type="submit" disabled={loading} onClick={() => postCommComment(post._id, comment._id)}>
+              {loading ? (
+                <i className="fa fa-spinner fa-spin"></i>
+              ) : (
+                "Post"
+              )}
+            </button>
                   </div>
                 </div>
               </div>

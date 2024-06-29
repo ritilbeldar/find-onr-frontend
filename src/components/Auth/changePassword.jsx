@@ -8,6 +8,7 @@ const ForgotPassword = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const { username } = useParams(); // Retrieve username from URL parameters
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -59,7 +60,13 @@ const ForgotPassword = () => {
               Don't have an account? <Link to="/register">Register Here</Link>
             </p>
             <div className="login-button">
-              <button type="submit">Send</button>
+            <button type="submit" disabled={loading}>
+              {loading ? (
+                <i className="fa fa-spinner fa-spin"></i>
+              ) : (
+                "Send"
+              )}
+            </button>
             </div>
           </form>
         </div>
