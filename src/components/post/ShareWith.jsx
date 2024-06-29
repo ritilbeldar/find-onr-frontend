@@ -77,6 +77,7 @@ const ShareWith = () => {
                 required
               >
                 <option >Select Feeling</option>
+                <option value="happy">Happy</option>
                 <option value="love">Love</option>
                 <option value="sad">Sad</option>
                 <option value="lonely">Lonely</option>
