@@ -10,22 +10,26 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+  
     const formData = {
       username: e.target.username.value,
       email: e.target.email.value,
       gender: e.target.gender.value,
       password: e.target.password.value,
     };
+  
     try {
-      await saveUserData(formData);
-      navigate(`/otp/${formData.username}`);
+      const isSuccess = await saveUserData(formData);
+  
+      if (isSuccess) {
+        navigate(`/otp/${formData.username}`);
+      }
     } catch (error) {
       console.error("Error saving user data:", error);
     } finally {
       setLoading(false);
     }
   };
-
   return (
     <>
       <div className="main">
