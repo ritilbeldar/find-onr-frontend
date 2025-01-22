@@ -40,24 +40,30 @@ const RegisterContext = ({ children }) => {
     }
   };
 
-  const saveUserData = async (data) => {
+const saveUserData = async (data) => {
     try {
-      // Assuming AvatarGenerator is a class
       const generator = new AvatarGenerator();
       const avatar = generator.generateRandomAvatar();
-
+  
       const userDataWithAvatar = { ...data, avatar };
       const response = await axios.post(
-        "https://find-one-backend.onrender.com/userregister",
+        "http://localhost:5000/userregister",
         userDataWithAvatar
       );
-
+  
       const savedUserData = response.data;
-      setUserData(savedUserData);
-      toast.success("User registered successfully!");
+  
+      if (savedUserData.success) {
+        setUserData(savedUserData);
+        toast.success(savedUserData.message || "User registered successfully!");
+        return true; // Indicating success
+      } else {
+        throw new Error(savedUserData.error || "Failed to send OTP.");
+      }
     } catch (error) {
       console.error("Error saving user data:", error);
-      toast.error("Failed to save user data. Please try again.");
+      toast.error(error.message || "Failed to save user data. Please try again.");
+      return false; // Indicating failure
     }
   };
 
