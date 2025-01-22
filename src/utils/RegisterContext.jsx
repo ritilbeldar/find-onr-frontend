@@ -47,7 +47,7 @@ const saveUserData = async (data) => {
   
       const userDataWithAvatar = { ...data, avatar };
       const response = await axios.post(
-        "http://localhost:5000/userregister",
+        "https://find-one-backend.onrender.com/userregister",
         userDataWithAvatar
       );
   
